@@ -48,7 +48,7 @@ namespace DemoWebJob3
             CloudBlobContainer container = blobClient.GetContainerReference("temperatures");
 
             string strNow = DateTime.UtcNow.ToString("yyyyMMddHHmmss");
-            CloudBlockBlob blockBlob = container.GetBlockBlobReference("temp2_" + strNow);
+            CloudBlockBlob blockBlob = container.GetBlockBlobReference("temp3_" + strNow);
             blockBlob.UploadText(msgTemp);
         }
     }
