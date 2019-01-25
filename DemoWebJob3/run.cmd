@@ -1,1 +1,0 @@
-dotnet DemoWebJob3.dll
